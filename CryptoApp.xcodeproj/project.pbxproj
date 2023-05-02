@@ -16,6 +16,14 @@
 		B57B35862A00FA7D001B5F0F /* Requirements.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B57B35852A00FA7D001B5F0F /* Requirements.rtf */; };
 		B57B35882A010A02001B5F0F /* EndPoints.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B57B35872A010A02001B5F0F /* EndPoints.rtf */; };
 		B57B358A2A011491001B5F0F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35892A011491001B5F0F /* main.swift */; };
+		B57B359A2A01163A001B5F0F /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35992A01163A001B5F0F /* Assembler.swift */; };
+		B57B359C2A011642001B5F0F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B359B2A011642001B5F0F /* Router.swift */; };
+		B57B359F2A011DC8001B5F0F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B359E2A011DC8001B5F0F /* User.swift */; };
+		B57B35A12A011FCC001B5F0F /* CryptoWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35A02A011FCC001B5F0F /* CryptoWallet.swift */; };
+		B57B35A32A01224E001B5F0F /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35A22A01224E001B5F0F /* CryptoData.swift */; };
+		B57B35A52A012337001B5F0F /* Iternary.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B57B35A42A012337001B5F0F /* Iternary.rtf */; };
+		B57B35A72A01284A001B5F0F /* DB-info.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B57B35A62A01284A001B5F0F /* DB-info.rtf */; };
+		B57B35AB2A012CF2001B5F0F /* HardCodedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35AA2A012CF2001B5F0F /* HardCodedData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		B57B35852A00FA7D001B5F0F /* Requirements.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Requirements.rtf; sourceTree = "<group>"; };
 		B57B35872A010A02001B5F0F /* EndPoints.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = EndPoints.rtf; sourceTree = "<group>"; };
 		B57B35892A011491001B5F0F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B57B35992A01163A001B5F0F /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		B57B359B2A011642001B5F0F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B57B359E2A011DC8001B5F0F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B57B35A02A011FCC001B5F0F /* CryptoWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWallet.swift; sourceTree = "<group>"; };
+		B57B35A22A01224E001B5F0F /* CryptoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoData.swift; sourceTree = "<group>"; };
+		B57B35A42A012337001B5F0F /* Iternary.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Iternary.rtf; sourceTree = "<group>"; };
+		B57B35A62A01284A001B5F0F /* DB-info.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "DB-info.rtf"; sourceTree = "<group>"; };
+		B57B35AA2A012CF2001B5F0F /* HardCodedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardCodedData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +95,7 @@
 		B57B354E2A00E57A001B5F0F = {
 			isa = PBXGroup;
 			children = (
+				B57B359D2A011DA0001B5F0F /* CryptoAppBackEnd */,
 				B57B35592A00E57A001B5F0F /* CryptoApp */,
 				B57B356B2A00E57B001B5F0F /* CryptoAppTests */,
 				B57B35752A00E57B001B5F0F /* CryptoAppUITests */,
@@ -99,13 +116,16 @@
 		B57B35592A00E57A001B5F0F /* CryptoApp */ = {
 			isa = PBXGroup;
 			children = (
+				B57B35942A0115F9001B5F0F /* Presentation */,
 				B57B355A2A00E57A001B5F0F /* AppDelegate.swift */,
 				B57B355C2A00E57A001B5F0F /* ViewController.swift */,
 				B57B355E2A00E57B001B5F0F /* Assets.xcassets */,
 				B57B35632A00E57B001B5F0F /* CryptoApp.entitlements */,
-				B57B35852A00FA7D001B5F0F /* Requirements.rtf */,
-				B57B35872A010A02001B5F0F /* EndPoints.rtf */,
+				B57B35A82A012852001B5F0F /* ProjectInfo */,
 				B57B35892A011491001B5F0F /* main.swift */,
+				B57B35992A01163A001B5F0F /* Assembler.swift */,
+				B57B359B2A011642001B5F0F /* Router.swift */,
+				B57B35AA2A012CF2001B5F0F /* HardCodedData.swift */,
 			);
 			path = CryptoApp;
 			sourceTree = "<group>";
@@ -125,6 +145,122 @@
 				B57B35782A00E57B001B5F0F /* CryptoAppUITestsLaunchTests.swift */,
 			);
 			path = CryptoAppUITests;
+			sourceTree = "<group>";
+		};
+		B57B358B2A01155D001B5F0F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B57B35932A0115EB001B5F0F /* Network */,
+				B57B35912A0115D2001B5F0F /* DataBase */,
+				B57B35902A0115C6001B5F0F /* DataManager */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B57B358C2A01156B001B5F0F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B57B358F2A0115BB001B5F0F /* Entity */,
+				B57B358E2A0115B2001B5F0F /* Usecase */,
+				B57B358D2A0115A6001B5F0F /* Contracts */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B57B358D2A0115A6001B5F0F /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		B57B358E2A0115B2001B5F0F /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		B57B358F2A0115BB001B5F0F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B57B359E2A011DC8001B5F0F /* User.swift */,
+				B57B35A02A011FCC001B5F0F /* CryptoWallet.swift */,
+				B57B35A22A01224E001B5F0F /* CryptoData.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B57B35902A0115C6001B5F0F /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		B57B35912A0115D2001B5F0F /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		B57B35932A0115EB001B5F0F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B57B35942A0115F9001B5F0F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B57B35972A01161D001B5F0F /* View */,
+				B57B35962A011616001B5F0F /* Preseneter */,
+				B57B35952A011608001B5F0F /* Contract */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B57B35952A011608001B5F0F /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		B57B35962A011616001B5F0F /* Preseneter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Preseneter;
+			sourceTree = "<group>";
+		};
+		B57B35972A01161D001B5F0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B57B359D2A011DA0001B5F0F /* CryptoAppBackEnd */ = {
+			isa = PBXGroup;
+			children = (
+				B57B358C2A01156B001B5F0F /* Domain */,
+				B57B358B2A01155D001B5F0F /* Data */,
+			);
+			path = CryptoAppBackEnd;
+			sourceTree = "<group>";
+		};
+		B57B35A82A012852001B5F0F /* ProjectInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B57B35852A00FA7D001B5F0F /* Requirements.rtf */,
+				B57B35872A010A02001B5F0F /* EndPoints.rtf */,
+				B57B35A42A012337001B5F0F /* Iternary.rtf */,
+				B57B35A62A01284A001B5F0F /* DB-info.rtf */,
+			);
+			path = ProjectInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +367,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57B35A52A012337001B5F0F /* Iternary.rtf in Resources */,
 				B57B355F2A00E57B001B5F0F /* Assets.xcassets in Resources */,
 				B57B35862A00FA7D001B5F0F /* Requirements.rtf in Resources */,
 				B57B35882A010A02001B5F0F /* EndPoints.rtf in Resources */,
+				B57B35A72A01284A001B5F0F /* DB-info.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +396,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57B359A2A01163A001B5F0F /* Assembler.swift in Sources */,
 				B57B355D2A00E57A001B5F0F /* ViewController.swift in Sources */,
+				B57B359F2A011DC8001B5F0F /* User.swift in Sources */,
+				B57B359C2A011642001B5F0F /* Router.swift in Sources */,
+				B57B35AB2A012CF2001B5F0F /* HardCodedData.swift in Sources */,
 				B57B355B2A00E57A001B5F0F /* AppDelegate.swift in Sources */,
 				B57B358A2A011491001B5F0F /* main.swift in Sources */,
+				B57B35A32A01224E001B5F0F /* CryptoData.swift in Sources */,
+				B57B35A12A011FCC001B5F0F /* CryptoWallet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

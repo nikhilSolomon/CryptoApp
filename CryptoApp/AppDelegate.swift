@@ -14,7 +14,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application test
+        // Create a CryptoWallet object for the user's wallet
+        
+        
+
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
