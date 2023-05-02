@@ -5,6 +5,7 @@
 //  Created by nikhil-pt6881 on 02/05/23.
 //
 import Foundation
+import CryptoKit
 
 class User {
     var id: String
@@ -16,8 +17,7 @@ class User {
     var lastLoggedIn: Date
     var dateOfJoining: Date
     
-    init(id: String, userName: String, password: String, cryptoWallet: [CryptoWallet] = [], balance: Double = 10000, favoriteCoinList: [String] = [], lastLoggedIn: Date = Date(), dateOfJoining: Date = Date()) {
-        self.id = id
+    init(userName: String, password: String, cryptoWallet: [CryptoWallet] = [], balance: Double = 10000, favoriteCoinList: [String] = [], lastLoggedIn: Date = Date(), dateOfJoining: Date = Date()) {
         self.userName = userName
         self.password = password
         self.cryptoWallet = cryptoWallet
@@ -25,6 +25,11 @@ class User {
         self.favoriteCoinList = favoriteCoinList
         self.lastLoggedIn = lastLoggedIn
         self.dateOfJoining = dateOfJoining
+        
+        let inputData = Data((userName+password).utf8)
+        let hashedData = SHA256.hash(data: inputData)
+        let hashedString = hashedData.compactMap { String(format: "%02x", $0) }.joined()
+        self.id = hashedString
     }
     
     func loginSessionHistory() {
@@ -33,6 +38,4 @@ class User {
         print("User \(self.userName) logged in at \(self.lastLoggedIn)")
     }
 }
-
-
 
