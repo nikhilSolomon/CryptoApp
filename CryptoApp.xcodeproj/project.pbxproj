@@ -10,10 +10,12 @@
 		B57B355B2A00E57A001B5F0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B355A2A00E57A001B5F0F /* AppDelegate.swift */; };
 		B57B355D2A00E57A001B5F0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B355C2A00E57A001B5F0F /* ViewController.swift */; };
 		B57B355F2A00E57B001B5F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57B355E2A00E57B001B5F0F /* Assets.xcassets */; };
-		B57B35622A00E57B001B5F0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57B35602A00E57B001B5F0F /* Main.storyboard */; };
 		B57B356D2A00E57B001B5F0F /* CryptoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B356C2A00E57B001B5F0F /* CryptoAppTests.swift */; };
 		B57B35772A00E57B001B5F0F /* CryptoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35762A00E57B001B5F0F /* CryptoAppUITests.swift */; };
 		B57B35792A00E57B001B5F0F /* CryptoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35782A00E57B001B5F0F /* CryptoAppUITestsLaunchTests.swift */; };
+		B57B35862A00FA7D001B5F0F /* Requirements.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B57B35852A00FA7D001B5F0F /* Requirements.rtf */; };
+		B57B35882A010A02001B5F0F /* EndPoints.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B57B35872A010A02001B5F0F /* EndPoints.rtf */; };
+		B57B358A2A011491001B5F0F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35892A011491001B5F0F /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,13 +40,15 @@
 		B57B355A2A00E57A001B5F0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B57B355C2A00E57A001B5F0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B57B355E2A00E57B001B5F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B57B35612A00E57B001B5F0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B57B35632A00E57B001B5F0F /* CryptoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CryptoApp.entitlements; sourceTree = "<group>"; };
 		B57B35682A00E57B001B5F0F /* CryptoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57B356C2A00E57B001B5F0F /* CryptoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppTests.swift; sourceTree = "<group>"; };
 		B57B35722A00E57B001B5F0F /* CryptoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57B35762A00E57B001B5F0F /* CryptoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppUITests.swift; sourceTree = "<group>"; };
 		B57B35782A00E57B001B5F0F /* CryptoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B57B35852A00FA7D001B5F0F /* Requirements.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Requirements.rtf; sourceTree = "<group>"; };
+		B57B35872A010A02001B5F0F /* EndPoints.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = EndPoints.rtf; sourceTree = "<group>"; };
+		B57B35892A011491001B5F0F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 				B57B355A2A00E57A001B5F0F /* AppDelegate.swift */,
 				B57B355C2A00E57A001B5F0F /* ViewController.swift */,
 				B57B355E2A00E57B001B5F0F /* Assets.xcassets */,
-				B57B35602A00E57B001B5F0F /* Main.storyboard */,
 				B57B35632A00E57B001B5F0F /* CryptoApp.entitlements */,
+				B57B35852A00FA7D001B5F0F /* Requirements.rtf */,
+				B57B35872A010A02001B5F0F /* EndPoints.rtf */,
+				B57B35892A011491001B5F0F /* main.swift */,
 			);
 			path = CryptoApp;
 			sourceTree = "<group>";
@@ -226,7 +232,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57B355F2A00E57B001B5F0F /* Assets.xcassets in Resources */,
-				B57B35622A00E57B001B5F0F /* Main.storyboard in Resources */,
+				B57B35862A00FA7D001B5F0F /* Requirements.rtf in Resources */,
+				B57B35882A010A02001B5F0F /* EndPoints.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +260,7 @@
 			files = (
 				B57B355D2A00E57A001B5F0F /* ViewController.swift in Sources */,
 				B57B355B2A00E57A001B5F0F /* AppDelegate.swift in Sources */,
+				B57B358A2A011491001B5F0F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,17 +295,6 @@
 			targetProxy = B57B35732A00E57B001B5F0F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B57B35602A00E57B001B5F0F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B57B35612A00E57B001B5F0F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B57B357A2A00E57B001B5F0F /* Debug */ = {
@@ -424,7 +421,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,7 +445,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

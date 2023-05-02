@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+-> Coin Listings\
+\
+https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=true&price_change_percentage=1h%2C24h%2C7d%2C30d&locale=en\
+\
+Struct for response\
+\
+\
+// This file was generated from JSON Schema using quicktype, do not modify it directly.\
+// To parse the JSON, add this file to your project and do:\
+//\
+//   let welcome = try? JSONDecoder().decode(Welcome.self, from: jsonData)\
+\
+import Foundation\
+\
+// MARK: - WelcomeElement\
+struct CoinData \{\
+    var id, symbol, name: String?\
+    var image: String?\
+    var currentPrice, marketCap, marketCapRank, fullyDilutedValuation: Int?\
+    var totalVolume, high24H, low24H: Int?\
+    var priceChange24H, priceChangePercentage24H, marketCapChange24H, marketCapChangePercentage24H: Double?\
+    var circulatingSupply, totalSupply, maxSupply, ath: Int?\
+    var athChangePercentage: Double?\
+    var athDate: String?\
+    var atl, atlChangePercentage: Double?\
+    var atlDate: String?\
+    var roi: NSNull?\
+    var lastUpdated: String?\
+    var sparklineIn7D: SparklineIn7D?\
+    var priceChangePercentage1HInCurrency, priceChangePercentage24HInCurrency, priceChangePercentage30DInCurrency, priceChangePercentage7DInCurrency: Double?\
+\}\
+\
+// MARK: - SparklineIn7D\
+struct SparklineIn7D \{\
+    var price: [Double]?\
+\}\
+}
