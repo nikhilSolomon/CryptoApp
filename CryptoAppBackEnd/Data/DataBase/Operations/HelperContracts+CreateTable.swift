@@ -6,18 +6,20 @@
 //
 
 import Foundation
+import SQLite3
 
+enum Keys {
+    case primary(columnName:String)
+    case foreign(columnName:String,references:(Table:String,column:String))
+}
 
-
-extension DBHelper {
+extension HelperContracts {
     
- 
-
     func createTable(tableName: String, properties: [(label: String, datatypes: String)],constraints : [Keys] = [] ,onSuccess: @escaping (String?) -> Void, onFailure: @escaping (Error?) -> Void) {
         
         let columnDefs = properties.map { "\($0.label) \($0.datatypes)" }
         let columnDefsStr = columnDefs.joined(separator: ", ")
-        var createTableQuery = "CREATE TABLE IF NOT EXISTS \(tableName) (\(columnDefsStr),"
+        var query = "CREATE TABLE IF NOT EXISTS \(tableName) (\(columnDefsStr),"
         
         
         if !constraints.isEmpty{
@@ -25,32 +27,49 @@ extension DBHelper {
                 switch constraint {
                 case .primary(let columnName):
                     // Add primary key constraint to SQL query
-                    createTableQuery += " PRIMARY KEY (\(columnName))"
+                    query += " PRIMARY KEY (\(columnName))"
                     
                 case .foreign(let columnName, let references):
                     // Add foreign key constraint to SQL query
                     let referencedTable = references.Table
                     let referencedColumn = references.column
                     
-                    createTableQuery += " FOREIGN KEY (\(columnName)) REFERENCES \(referencedTable) (\(referencedColumn))"
+                    query += " FOREIGN KEY (\(columnName)) REFERENCES \(referencedTable) (\(referencedColumn))"
                 }
             }
         }
         
-
-        createTableQuery += ");"
-
-        print(createTableQuery)
         
-        if true {
-            onSuccess(createTableQuery)
-        }else{
-            onFailure(NSError(
-                domain: "com.crypto",
-                code: 0,
-                userInfo: [NSLocalizedDescriptionKey: "Error: check for constraints"])
+        query += ");"
+        
+        guard prepareQuery(query: query) != nil else {
+            onFailure(
+                NSError(
+                    domain: "com.zohocorp",
+                    code: 0,
+                    userInfo: [NSLocalizedDescriptionKey: "Error: Table Creation Failed."])
             )
+            return
         }
         
+        defer {
+            
+            sqlite3_finalize(statementPointer)
+        }
+        
+        if sqlite3_step(statementPointer) == SQLITE_DONE {
+            onSuccess("Table has been Created.")
+        } else {
+            let error = String(cString: sqlite3_errmsg(dbPointer)).capitalized
+            onFailure(
+                NSError(
+                    domain: "com.zohocorp",
+                    code: 0,
+                    userInfo: [NSLocalizedDescriptionKey: "Error: \(error)"])
+            )
+            return
+        }
     }
+    
 }
+

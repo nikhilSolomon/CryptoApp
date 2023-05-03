@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CryptoWallet {
+struct Currency {
     var coinId : String
     var name : String
     var iconUrl : URL

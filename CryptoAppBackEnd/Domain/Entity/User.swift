@@ -11,16 +11,16 @@ class User {
     var id: String
     var userName: String
     var password: String
-    var cryptoWallet: [CryptoWallet]
+    var Holdings: [Currency]
     var balance: Double
     var favoriteCoinList: [String]
     var lastLoggedIn: Date
     var dateOfJoining: Date
     
-    init(userName: String, password: String, cryptoWallet: [CryptoWallet] = [], balance: Double = 10000, favoriteCoinList: [String] = [], lastLoggedIn: Date = Date(), dateOfJoining: Date = Date()) {
+    init(userName: String, password: String, cryptoWallet: [Currency] = [], balance: Double = 10000, favoriteCoinList: [String] = [], lastLoggedIn: Date = Date(), dateOfJoining: Date = Date()) {
         self.userName = userName
         self.password = password
-        self.cryptoWallet = cryptoWallet
+        self.Holdings = cryptoWallet
         self.balance = balance
         self.favoriteCoinList = favoriteCoinList
         self.lastLoggedIn = lastLoggedIn

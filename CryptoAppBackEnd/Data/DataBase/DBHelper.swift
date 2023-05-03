@@ -10,9 +10,11 @@ import SQLite3
 
 class DBHelper : HelperContracts{
     
+    var statementPointer: OpaquePointer?
+    
+    
     var dbPointer: OpaquePointer?
     
-    var statmentPointer: OpaquePointer?
     
     deinit{close()}
     
@@ -21,7 +23,6 @@ class DBHelper : HelperContracts{
         if sqlite3_open(FileHandler.shared.open(path: pathToDatabase), &dbPointer) != SQLITE_OK {
             print("Error establishing connection to the database.")
         }
-        
     }
     
     func close() {
@@ -30,7 +31,7 @@ class DBHelper : HelperContracts{
     
     func prepareQuery(query: String) -> Int32? {
         
-        let preparedStatement = sqlite3_prepare_v2(dbPointer, query, -1, &statmentPointer, nil)
+        let preparedStatement = sqlite3_prepare_v2(dbPointer, query, -1, &statementPointer, nil)
         
         if preparedStatement == SQLITE_OK {
             return preparedStatement

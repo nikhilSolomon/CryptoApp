@@ -16,7 +16,7 @@ enum SQLiteError: Error {
   case databaseError
 }
 
-extension DBHelper{
+extension HelperContracts{
     
     func errorMessage(db:OpaquePointer?)-> String {
         if let errorPointer = sqlite3_errmsg(db) {

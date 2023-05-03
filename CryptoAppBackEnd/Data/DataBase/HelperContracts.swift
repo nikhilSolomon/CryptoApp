@@ -8,16 +8,13 @@
 import Foundation
 
 
-enum Keys {
-    case primary(columnName:String)
-    case foreign(columnName:String,references:(Table:String,column:String))
-}
+
 
 protocol HelperContracts {
     
     var dbPointer : OpaquePointer? {get set}
     
-    var statmentPointer : OpaquePointer? {get set}
+    var statementPointer : OpaquePointer? {get set}
     
     func open(_ pathToDatabase : String)
     
@@ -29,9 +26,17 @@ protocol HelperContracts {
 
     func createTable(tableName: String,
                      properties: [(label: String, datatypes: String)],
-                     constraints : [Keys],
+                     constraints: [Keys],
                      onSuccess: @escaping (String?) -> Void,
                      onFailure: @escaping (Error?) -> Void)
+    
+    func insertData(tableName: String,
+                    columns: [String]?,
+                    values: [Any],
+                    onSuccess: @escaping (String?) -> Void,
+                    onFailure: @escaping (Error?) -> Void)
+    
+    
     }
     
     

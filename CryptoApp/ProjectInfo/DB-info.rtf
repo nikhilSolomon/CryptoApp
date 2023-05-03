@@ -21,14 +21,14 @@ CREATE TABLE Users (\
 \
 \
 CREATE TABLE CryptoWallets (\
-	\
+    id\
     CoinId TEXT PRIMARY KEY,\
     name TEXT,\
     iconUrl TEXT,\
     quantity REAL,\
     priceAtPurchase REAL,\
     NOT NULL (name)\
-    FOREIGN KEY (CoinId) REFERENCES Users(id)\
+    FOREIGN KEY (id) REFERENCES Users(id)\
 \
 );\
 \

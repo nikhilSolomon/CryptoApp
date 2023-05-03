@@ -6,8 +6,8 @@
 //
 
 import Foundation
-
-struct WelcomeElement {
+// naming 
+struct CryptoData {
     var id, symbol, name: String?
     var image: String?
     var currentPrice, marketCap, marketCapRank, fullyDilutedValuation: Int?

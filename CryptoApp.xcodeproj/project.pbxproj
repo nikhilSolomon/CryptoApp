@@ -19,7 +19,7 @@
 		B57B359A2A01163A001B5F0F /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35992A01163A001B5F0F /* Assembler.swift */; };
 		B57B359C2A011642001B5F0F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B359B2A011642001B5F0F /* Router.swift */; };
 		B57B359F2A011DC8001B5F0F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B359E2A011DC8001B5F0F /* User.swift */; };
-		B57B35A12A011FCC001B5F0F /* CryptoWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35A02A011FCC001B5F0F /* CryptoWallet.swift */; };
+		B57B35A12A011FCC001B5F0F /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35A02A011FCC001B5F0F /* Currency.swift */; };
 		B57B35A32A01224E001B5F0F /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35A22A01224E001B5F0F /* CryptoData.swift */; };
 		B57B35A52A012337001B5F0F /* Iternary.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B57B35A42A012337001B5F0F /* Iternary.rtf */; };
 		B57B35A72A01284A001B5F0F /* DB-info.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B57B35A62A01284A001B5F0F /* DB-info.rtf */; };
@@ -29,6 +29,7 @@
 		B57B35B82A022672001B5F0F /* HelperContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35B72A022672001B5F0F /* HelperContracts.swift */; };
 		B57B35BA2A023F04001B5F0F /* HelperContracts+ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35B92A023F04001B5F0F /* HelperContracts+ErrorHandling.swift */; };
 		B57B35BC2A024006001B5F0F /* HelperContracts+CreateTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35BB2A024006001B5F0F /* HelperContracts+CreateTable.swift */; };
+		B5C7C95F2A026A82000F6AAD /* HelperContracts+Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7C95E2A026A82000F6AAD /* HelperContracts+Insert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +66,7 @@
 		B57B35992A01163A001B5F0F /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
 		B57B359B2A011642001B5F0F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B57B359E2A011DC8001B5F0F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B57B35A02A011FCC001B5F0F /* CryptoWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWallet.swift; sourceTree = "<group>"; };
+		B57B35A02A011FCC001B5F0F /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		B57B35A22A01224E001B5F0F /* CryptoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoData.swift; sourceTree = "<group>"; };
 		B57B35A42A012337001B5F0F /* Iternary.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Iternary.rtf; sourceTree = "<group>"; };
 		B57B35A62A01284A001B5F0F /* DB-info.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "DB-info.rtf"; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 		B57B35B72A022672001B5F0F /* HelperContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperContracts.swift; sourceTree = "<group>"; };
 		B57B35B92A023F04001B5F0F /* HelperContracts+ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HelperContracts+ErrorHandling.swift"; sourceTree = "<group>"; };
 		B57B35BB2A024006001B5F0F /* HelperContracts+CreateTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HelperContracts+CreateTable.swift"; sourceTree = "<group>"; };
+		B5C7C95E2A026A82000F6AAD /* HelperContracts+Insert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HelperContracts+Insert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				B57B359E2A011DC8001B5F0F /* User.swift */,
-				B57B35A02A011FCC001B5F0F /* CryptoWallet.swift */,
+				B57B35A02A011FCC001B5F0F /* Currency.swift */,
 				B57B35A22A01224E001B5F0F /* CryptoData.swift */,
 			);
 			path = Entity;
@@ -290,6 +292,7 @@
 			children = (
 				B57B35B92A023F04001B5F0F /* HelperContracts+ErrorHandling.swift */,
 				B57B35BB2A024006001B5F0F /* HelperContracts+CreateTable.swift */,
+				B5C7C95E2A026A82000F6AAD /* HelperContracts+Insert.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -440,7 +443,8 @@
 				B57B35A32A01224E001B5F0F /* CryptoData.swift in Sources */,
 				B57B35B12A0222E6001B5F0F /* FileHandler.swift in Sources */,
 				B57B35B62A022635001B5F0F /* DBHelper.swift in Sources */,
-				B57B35A12A011FCC001B5F0F /* CryptoWallet.swift in Sources */,
+				B5C7C95F2A026A82000F6AAD /* HelperContracts+Insert.swift in Sources */,
+				B57B35A12A011FCC001B5F0F /* Currency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
