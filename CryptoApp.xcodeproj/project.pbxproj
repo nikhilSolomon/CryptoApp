@@ -30,6 +30,7 @@
 		B57B35BA2A023F04001B5F0F /* HelperContracts+ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35B92A023F04001B5F0F /* HelperContracts+ErrorHandling.swift */; };
 		B57B35BC2A024006001B5F0F /* HelperContracts+CreateTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35BB2A024006001B5F0F /* HelperContracts+CreateTable.swift */; };
 		B5C7C95F2A026A82000F6AAD /* HelperContracts+Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7C95E2A026A82000F6AAD /* HelperContracts+Insert.swift */; };
+		B5C7C9612A028956000F6AAD /* HelperContract+Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7C9602A028956000F6AAD /* HelperContract+Select.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		B57B35B92A023F04001B5F0F /* HelperContracts+ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HelperContracts+ErrorHandling.swift"; sourceTree = "<group>"; };
 		B57B35BB2A024006001B5F0F /* HelperContracts+CreateTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HelperContracts+CreateTable.swift"; sourceTree = "<group>"; };
 		B5C7C95E2A026A82000F6AAD /* HelperContracts+Insert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HelperContracts+Insert.swift"; sourceTree = "<group>"; };
+		B5C7C9602A028956000F6AAD /* HelperContract+Select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HelperContract+Select.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +295,7 @@
 				B57B35B92A023F04001B5F0F /* HelperContracts+ErrorHandling.swift */,
 				B57B35BB2A024006001B5F0F /* HelperContracts+CreateTable.swift */,
 				B5C7C95E2A026A82000F6AAD /* HelperContracts+Insert.swift */,
+				B5C7C9602A028956000F6AAD /* HelperContract+Select.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				B57B35B62A022635001B5F0F /* DBHelper.swift in Sources */,
 				B5C7C95F2A026A82000F6AAD /* HelperContracts+Insert.swift in Sources */,
 				B57B35A12A011FCC001B5F0F /* Currency.swift in Sources */,
+				B5C7C9612A028956000F6AAD /* HelperContract+Select.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

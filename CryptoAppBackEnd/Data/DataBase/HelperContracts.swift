@@ -37,6 +37,19 @@ protocol HelperContracts {
                     onFailure: @escaping (Error?) -> Void)
     
     
+    func select(
+        _ columns: [String],
+        from tableName: String,
+        where conditions: String?,
+        orderBy order: String?,
+        limit: Int?,
+        join tables: String?,
+        onSuccess: @escaping ([[String: Any]]?) -> Void,
+        onFailure: @escaping (Error?) -> Void
+        
+        
+    )
+    
     }
     
     
