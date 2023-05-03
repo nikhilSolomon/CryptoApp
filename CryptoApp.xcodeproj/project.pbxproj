@@ -24,6 +24,11 @@
 		B57B35A52A012337001B5F0F /* Iternary.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B57B35A42A012337001B5F0F /* Iternary.rtf */; };
 		B57B35A72A01284A001B5F0F /* DB-info.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B57B35A62A01284A001B5F0F /* DB-info.rtf */; };
 		B57B35AB2A012CF2001B5F0F /* HardCodedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35AA2A012CF2001B5F0F /* HardCodedData.swift */; };
+		B57B35B12A0222E6001B5F0F /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35B02A0222E6001B5F0F /* FileHandler.swift */; };
+		B57B35B62A022635001B5F0F /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35B52A022635001B5F0F /* DBHelper.swift */; };
+		B57B35B82A022672001B5F0F /* HelperContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35B72A022672001B5F0F /* HelperContracts.swift */; };
+		B57B35BA2A023F04001B5F0F /* HelperContracts+ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35B92A023F04001B5F0F /* HelperContracts+ErrorHandling.swift */; };
+		B57B35BC2A024006001B5F0F /* HelperContracts+CreateTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B35BB2A024006001B5F0F /* HelperContracts+CreateTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		B57B35A42A012337001B5F0F /* Iternary.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Iternary.rtf; sourceTree = "<group>"; };
 		B57B35A62A01284A001B5F0F /* DB-info.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "DB-info.rtf"; sourceTree = "<group>"; };
 		B57B35AA2A012CF2001B5F0F /* HardCodedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardCodedData.swift; sourceTree = "<group>"; };
+		B57B35B02A0222E6001B5F0F /* FileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
+		B57B35B52A022635001B5F0F /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		B57B35B72A022672001B5F0F /* HelperContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperContracts.swift; sourceTree = "<group>"; };
+		B57B35B92A023F04001B5F0F /* HelperContracts+ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HelperContracts+ErrorHandling.swift"; sourceTree = "<group>"; };
+		B57B35BB2A024006001B5F0F /* HelperContracts+CreateTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HelperContracts+CreateTable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +160,7 @@
 		B57B358B2A01155D001B5F0F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B57B35AF2A0222C0001B5F0F /* FileManger */,
 				B57B35932A0115EB001B5F0F /* Network */,
 				B57B35912A0115D2001B5F0F /* DataBase */,
 				B57B35902A0115C6001B5F0F /* DataManager */,
@@ -201,6 +212,9 @@
 		B57B35912A0115D2001B5F0F /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
+				B57B35B42A02260C001B5F0F /* Operations */,
+				B57B35B52A022635001B5F0F /* DBHelper.swift */,
+				B57B35B72A022672001B5F0F /* HelperContracts.swift */,
 			);
 			path = DataBase;
 			sourceTree = "<group>";
@@ -261,6 +275,23 @@
 				B57B35A62A01284A001B5F0F /* DB-info.rtf */,
 			);
 			path = ProjectInfo;
+			sourceTree = "<group>";
+		};
+		B57B35AF2A0222C0001B5F0F /* FileManger */ = {
+			isa = PBXGroup;
+			children = (
+				B57B35B02A0222E6001B5F0F /* FileHandler.swift */,
+			);
+			path = FileManger;
+			sourceTree = "<group>";
+		};
+		B57B35B42A02260C001B5F0F /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				B57B35B92A023F04001B5F0F /* HelperContracts+ErrorHandling.swift */,
+				B57B35BB2A024006001B5F0F /* HelperContracts+CreateTable.swift */,
+			);
+			path = Operations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,7 +427,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57B35BC2A024006001B5F0F /* HelperContracts+CreateTable.swift in Sources */,
 				B57B359A2A01163A001B5F0F /* Assembler.swift in Sources */,
+				B57B35B82A022672001B5F0F /* HelperContracts.swift in Sources */,
+				B57B35BA2A023F04001B5F0F /* HelperContracts+ErrorHandling.swift in Sources */,
 				B57B355D2A00E57A001B5F0F /* ViewController.swift in Sources */,
 				B57B359F2A011DC8001B5F0F /* User.swift in Sources */,
 				B57B359C2A011642001B5F0F /* Router.swift in Sources */,
@@ -404,6 +438,8 @@
 				B57B355B2A00E57A001B5F0F /* AppDelegate.swift in Sources */,
 				B57B358A2A011491001B5F0F /* main.swift in Sources */,
 				B57B35A32A01224E001B5F0F /* CryptoData.swift in Sources */,
+				B57B35B12A0222E6001B5F0F /* FileHandler.swift in Sources */,
+				B57B35B62A022635001B5F0F /* DBHelper.swift in Sources */,
 				B57B35A12A011FCC001B5F0F /* CryptoWallet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
